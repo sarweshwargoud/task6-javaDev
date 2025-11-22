@@ -26,13 +26,13 @@ Implement a menu-driven system for user interaction
 
 🧠 Concepts Used (as required in the task)
 Concept	How I Implemented It
-Class & Object	Account, SavingsAccount, and BankApp classes created
-Encapsulation	Account balance & data kept private and accessed through methods
-Inheritance	SavingsAccount extends Account
-Method Overriding	withdraw() method is overridden to enforce minimum balance logic
-Polymorphism	Account ref = new SavingsAccount() usage in main
-Constructor Overloading	Account initialization and object creation
-Runtime Method Dispatch	Overridden method executed dynamically at runtime
+Class & Object	->Account, SavingsAccount, and BankApp classes created
+Encapsulation ->	Account balance & data kept private and accessed through methods
+Inheritance	-> SavingsAccount extends Account
+Method Overriding ->	withdraw() method is overridden to enforce minimum balance logic
+Polymorphism ->	Account ref = new SavingsAccount() usage in main
+Constructor Overloading	-> Account initialization and object creation
+Runtime Method Dispatch	Overridden ->method executed dynamically at runtime
 User Input Handling	Scanner used for interactive CLI system
 Real-World Simulation	Banking operations stored in a transaction list
 
@@ -81,7 +81,9 @@ Display current balance anytime
 Fully interactive console menu
 
 ▶️ How to Run the Program
+
 1️⃣ Compile
+
 javac *.java
 
 2️⃣ Run
@@ -105,8 +107,13 @@ To ensure the program works properly, I tested:
 
 Test	Result
 Positive deposit	✔ Updated balance & saved transaction
+
 Invalid deposit (negative)	✔ Error handled
+
 Withdrawal with enough balance	✔ Successful
+
 Withdrawal violating minimum balance rule	✔ Blocked with custom message
+
 Transaction history logging	✔ Each action recorded
+
 Program exit	✔ Closes safely
